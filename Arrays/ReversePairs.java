@@ -24,13 +24,13 @@ public class ReversePairs{
         
         return count;
     }    
-}
+
     
     //OPTIMAL APPROACH 
     //merge sort approach 
 
-class Solution {
-    public int reversePairs(int[] nums) {
+
+    public int reversePairs2(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
         return mergeSort(nums, 0, nums.length - 1);
     }
