@@ -18,7 +18,7 @@ public class CountInversions {
         return count;
     }
 
-    //Brute force approach 
+    //optimal approach 
     private static int merge(int[] arr, int low, int mid, int high) {
         ArrayList<Integer> temp = new ArrayList<>(); // temporary array
         int left = low;      // starting index of left half of arr
