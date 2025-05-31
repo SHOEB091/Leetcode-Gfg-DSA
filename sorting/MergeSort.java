@@ -2,6 +2,7 @@ package sorting;
 
 public class MergeSort {
     
+    
     // Utility function to print the array
     public static void printArray(int arr[]){
         for(int i=0;i<arr.length;i++){

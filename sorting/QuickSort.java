@@ -2,6 +2,9 @@ package sorting;
 
 public class QuickSort {
 
+ //The pivot index is the position in the array where the pivot element ends up after partitioning, dividing the array into two parts for further sorting.
+
+
     // Utility function to print the array
     public static void printArr(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
