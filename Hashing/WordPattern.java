@@ -37,7 +37,7 @@ public class WordPattern {
         }
 
 
-        return false;
+        return true;
     }
 
 }
