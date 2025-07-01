@@ -6,7 +6,7 @@ public class Floor {
     {
     int []arr={2,3,5,9,14,16,18};
     int ans=floor(arr,7);
-        System.out.println(ans);
+        System.out.println("The Array index " + ans);
     }
     public static int floor(int []arr,int target)
     {
