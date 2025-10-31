@@ -7,22 +7,42 @@ package Pattern;
  * * * * * 
  */
 public class triangle {
-    public static void main(String[] args) {
-        int rows = 8;
-        // Loop through each row
-        for (int i = 1; i <= rows; i++) {
-            // Print spaces to center the stars
-            for (int j = 1; j <= rows - i; j++) {
-                System.out.print(" ");
-            }
-
-            // Print stars for the current row
-            for (int k = 1; k <= (2 * i - 1); k++) {
-                System.out.print("*");
-            }
-
-            // Move to the next line after printing each row
-            System.out.println();
+    static void pattern7(int N)
+{
+    // This is the outer loop which will loop for the rows.
+    for (int i = 0; i < N; i++)
+    {
+        // For printing the spaces before stars in each row
+        for (int j =0; j<N-i-1; j++)
+        {
+            System.out.print(" ");
         }
+       
+        // For printing the stars in each row
+        for(int j=0;j< 2*i+1;j++){
+            
+            System.out.print("*");
+        }
+        
+        // For printing the spaces after the stars in each row
+         for (int j =0; j<N-i-1; j++)
+        {
+            System.out.print(" ");
+        }
+       
+
+        // As soon as the stars for each iteration are printed, we move to the
+        // next row and give a line break otherwise all stars
+        // would get printed in 1 line.
+        System.out.println();
+    }
+}
+
+    public static void main(String[] args) {
+        
+        // Here, we have taken the value of N as 5.
+        // We can also take input from the user.
+        int N = 9;
+        pattern7(N);
     }
 }
