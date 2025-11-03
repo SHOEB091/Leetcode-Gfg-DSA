@@ -1,4 +1,4 @@
-package StringQues;
+package string;
 
 class ZigZagConversion{
 
