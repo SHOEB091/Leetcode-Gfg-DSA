@@ -1,5 +1,14 @@
 public class recursion {
 
+    //Recursion Demo
+    public static String recursionDemo(int n1){
+        if(n1==1){
+            return "shoeb";
+        }
+        String name = "shoeb";
+        return name + recursionDemo(n1-1); 
+    }
+
     public static int sumOfNnsturalNumber(int n1){
         //base case
         if(n1==1){
@@ -18,6 +27,6 @@ public class recursion {
     }
     public static void main(String[] args) {
         int n1 = 10;
-        System.out.println("Sum of N natural Number" + n1 + " is: " + sumOfNnsturalNumber(n1));
+        System.out.println("Sum of N natural Number" + n1 + " is: " + recursionDemo(n1));
     }
 }
