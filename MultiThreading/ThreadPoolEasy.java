@@ -6,6 +6,11 @@ import java.util.concurrent.TimeUnit;
 
 /*
 THREAD POOL (super easy explanation)
+Colelction of Pre initialized threads
+
+1. Resource management
+2. Response time
+3. Control over Thread Count
 
 Problem (without pool):
 - You keep creating new Thread objects for every small task.
@@ -27,6 +32,21 @@ ExecutorService pool = Executors.newFixedThreadPool(3);
 Real-world analogy:
 - Restaurant: instead of hiring a new cook for each order, keep a fixed team of cooks.
 */
+
+/*
+ * EXECUTOR Framework in JAVA
+ * The Executor framework was introduced in Java 5 as part of the java.util.concurrent
+ * package to simplify the development of 
+ * concurrent applications by abstracting away
+ * many of the complexities involved in creating and managing threads.
+ * 
+ * //Before Executor service
+ * Manual Thread Management
+ * Resource Management 
+ * Scalability 
+ * Thread Reuse
+ * Error Handling
+ */
 
 public class ThreadPoolEasy {
     public static void main(String[] args) {
