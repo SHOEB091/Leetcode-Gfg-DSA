@@ -26,6 +26,13 @@ public class RotateArrayKpositions {
     }
      */
 
+     // This is to Left rotate array
+     /*
+      * reverse(arr, 0, n - 1);
+      *reverse(arr, 0, n - d - 1);
+      *reverse(arr, n - d, n - 1);
+     */
+
 
 
     public static int[] rotateArray(int[] arr, int rotatedBy) {
