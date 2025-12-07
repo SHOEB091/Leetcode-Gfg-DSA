@@ -74,6 +74,8 @@ public class MaximumMeetingsInOneRoom {
             }
         }
 
+        Collections.sort(ans);  // Sort meeting numbers in ascending order
+
         // ---------------------------------------------------------
         // Return selected meeting numbers
         // ---------------------------------------------------------
