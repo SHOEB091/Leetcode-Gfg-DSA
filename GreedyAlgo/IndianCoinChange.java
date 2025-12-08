@@ -19,7 +19,7 @@ public class IndianCoinChange {
 
     public static void minCoin(Integer[] coins, int amount) {
     
-
+        // Sort coins in descending order
         Arrays.sort(coins, Comparator.reverseOrder());
         
         int countOfCoins=0;
