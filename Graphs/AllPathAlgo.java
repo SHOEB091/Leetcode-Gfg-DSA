@@ -1,4 +1,5 @@
 package Graphs;
+import java.util.ArrayList;
 
 public class AllPath{
   public static class Edge{
@@ -45,7 +46,17 @@ public class AllPath{
         }
     }
 }
-  
+
+  public static void main(String[] args){
+    int V = 7;
+    ArrayList<Edge> graph[] = new ArrayList<>();
+    createGraph(graph);
+    int source =0;
+    int destination = 5;
+    boolean visited[] = new Boolean[V];
+    vis[src] = true;
+    printAllPaths(graph, src, tar, ""+src, vis);
+  }
   
   
 }  
