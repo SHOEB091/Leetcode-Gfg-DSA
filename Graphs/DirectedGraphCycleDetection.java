@@ -33,7 +33,7 @@ class DirectedGraphCycleDetect {
         recStack[current] = true;
 
         for (int i = 0; i < graph[current].size(); i++) {
-            Edge e = graph[current].get(i);
+            Edge e = graph[current].get(i); //finding neighbours
             
             // If the neighbor is already in the recursion stack, a cycle exists
             if (recStack[e.destination]) {
