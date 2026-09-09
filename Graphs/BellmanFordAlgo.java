@@ -22,7 +22,18 @@ Public class BellmanFordAlgo{
   }
 
   public static int[] bellmanFord(Arraylist<Edge> graph[] , int src){
-    
+    int dist [] = new int[graph.length];
+    for(int i=0;i<dist.length;i++){
+      if(i != src){
+        dist[i] = Integer.MAX_VALUE;
+      }
+    }
+    for(int k =0;k<V-1;k++){   // v-1 times loop runs
+      for(int i = 0; i<V;i++{   // edges nikalne ke liye
+        for(int j= 0;j<graph[i].size();j++){
+          
+        }
+    }
   }
   
 }
