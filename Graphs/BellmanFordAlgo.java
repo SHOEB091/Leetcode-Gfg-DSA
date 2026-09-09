@@ -76,6 +76,20 @@ public class BellmanFordAlgo {
             }
         }
 
+        //Detecting Negative Weight Cycle
+        for(int j=0; j<graph.length; j++) {
+            for(int k=0; k<graph[j].size(); k++) {
+                Edge e = graph[j].get(k);
+                int u = e.src;
+                int v = e.dest;
+                int wt = e.wt;
+                if(dist[u] != Integer.MAX_VALUE && dist[u]+wt < dist[v]) {
+                    System.out.println("negative weight cycle exists");
+                        break;
+                }
+            }
+        }
+
         // Step 4: Print shortest distances from source node
         System.out.println("Shortest distances from source node " + src + ":");
         for (int i = 0; i < dist.length; i++) {
