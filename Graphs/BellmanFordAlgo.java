@@ -28,12 +28,25 @@ Public class BellmanFordAlgo{
         dist[i] = Integer.MAX_VALUE;
       }
     }
+    //O(V)
     for(int k =0;k<V-1;k++){   // v-1 times loop runs
+      // O(E)
       for(int i = 0; i<V;i++{   // edges nikalne ke liye
         for(int j= 0;j<graph[i].size();j++){
-          
+          Edge e = graph[i].get(j);
+          int u = e.src;
+          int v = e.dest;
+
+          if(dist[u] !=Integer.MAX_VALUE && dist[u]+e.wt < dist[v]){
+            dist[v] dist[u] + e.wt;
+          }
         }
     }
   }
+  //Printing elements
+    for(int i =0; i<dist.lenght;i++){
+      System.out.println(dist);
+    }
+    System.out.println();
   
 }
