@@ -3,7 +3,7 @@ package LinkedList;
 
 class arrayToLinkedList {
 
-    public class Node {
+    public static class Node {
         int data;
         Node next;
         Node prev;
