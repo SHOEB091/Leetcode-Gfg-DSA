@@ -1,4 +1,4 @@
-package BinaryTrees;
+package Trees;
 
 /*
 A Tree is a non-linear data structure where:
