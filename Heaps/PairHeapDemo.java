@@ -6,7 +6,7 @@
         PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a, b) -> b[0] - a[0]);        
 */
 // MIN HEAP Tradition mehtod 
-import java.util.PriorityQueue;
+/* import java.util.PriorityQueue;
 
 class Pair implements Comparable<Pair> {
     int key;
@@ -70,3 +70,4 @@ public class MaxHeapTraditional {
         }
     }
 }
+*/
