@@ -1,19 +1,23 @@
 package Heaps;
 
 public class KClosestPointToOrigin{
-  public static class Pair implements Comparable<Pair>{
-    int key;
-    int value;
-    public Pair(int key , int value){
-      this.key = key;
-      this.value = value;
+ static class Pair implements Comparable<Pair> {
+    int dist;   // x*x + y*y  (the heap key)
+    int x, y;   // the point itself
+
+    public Pair(int dist, int x, int y) {
+        this.dist = dist;
+        this.x = x;
+        this.y = y;
     }
+
+    // Max-Heap: largest dist stays at the top
     @Override
-    public int compareTo(int order){
-      return this.order - this.key;
+    public int compareTo(Pair other) {
+        return Integer.compare(other.dist, this.dist);
     }
-    
-  }
+}
+  
   public int[][] kClosest(int[][] arr, int k) {
     PriorityQueue<Pair> maxHeap = new PriorityQueue<>();
 
