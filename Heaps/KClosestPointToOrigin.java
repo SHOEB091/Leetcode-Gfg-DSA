@@ -1,4 +1,5 @@
 package Heaps;
+import java.util.PriorityQueue;
 
 public class KClosestPointToOrigin{
  static class Pair implements Comparable<Pair> {
