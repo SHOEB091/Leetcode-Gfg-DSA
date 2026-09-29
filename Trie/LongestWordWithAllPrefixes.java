@@ -10,4 +10,7 @@ public class LongestWordWithAllPrefix{
       }
     }
   }
+  public static void insert(String word){
+    
+  }
 }
