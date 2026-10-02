@@ -1,6 +1,6 @@
 package Trie;
 
-public class CreateTrie {
+public class CreateTrie_01 {
     
     // Represents a single letter/character node in the Trie
     public static class Node {
@@ -42,6 +42,22 @@ public class CreateTrie {
 
         // Once the entire word is traversed, mark the last node as a complete word
         current.eow = true;
+    }
+
+     // Searches whether a complete word exists in the Trie
+    public static boolean search(String key) {
+        Node current = root;
+        for (int level = 0; level < key.length(); level++) {
+            int index = key.charAt(level) - 'a';
+
+            // Character path not found
+            if (current.children[index] == null) {
+                return false;
+            }
+            current = current.children[index];
+        }
+        // Return true only if it marks the end of a recognized word
+        return current.eow;
     }
 
     public static void main(String[] args) {

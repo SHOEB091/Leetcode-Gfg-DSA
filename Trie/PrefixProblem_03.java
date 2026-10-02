@@ -1,6 +1,6 @@
 package Trie;
 
-public class PrefixProblem {
+public class PrefixProblem_03 {
 
     // Definition of a Trie Node
     public static class Node {

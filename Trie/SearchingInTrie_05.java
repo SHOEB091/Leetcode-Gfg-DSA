@@ -1,6 +1,6 @@
 package Trie;
 
-public class SearchingInTrie {
+public class SearchingInTrie_05 {
      // Represents a single letter/character node in the Trie
     public static class Node {
         // Pointers to up to 26 possible children (one for each letter 'a' through 'z')

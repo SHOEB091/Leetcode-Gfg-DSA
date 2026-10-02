@@ -1,6 +1,6 @@
 package Trie;
 
-public class StartsWithPrefix {
+public class StartsWithPrefix_04 {
     public static class Node{
         Node [] children = new Node[26];
         boolean eow = false;

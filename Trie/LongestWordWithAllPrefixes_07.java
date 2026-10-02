@@ -1,6 +1,6 @@
 package Trie;
 
-public class LongestWordWithAllPrefixes {
+public class LongestWordWithAllPrefixes_07 {
     public static class Node {
         Node[] children = new Node[26];
         boolean eow = false;

@@ -1,6 +1,6 @@
 package Trie;
 
-public class UniqueSubstrings {
+public class UniqueSubstrings_06 {
     
     // Definition of a standard Trie Node
     public static class Node {

@@ -1,6 +1,6 @@
 package Trie;
 
-public class WordBreak {
+public class WordBreak_02 {
 
     // Node class must be static to be referenced by static fields/methods
     public static class Node {
