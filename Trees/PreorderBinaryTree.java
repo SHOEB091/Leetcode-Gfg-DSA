@@ -16,8 +16,8 @@ public class PreorderBinaryTree {
         }
     }
 
-    // 2. Helper class to construct and traverse the tree
-    public static class BinaryTree {
+    
+
         // Tracks the current position in the input array across recursive calls
         static int index = -1;
 
@@ -64,7 +64,6 @@ public class PreorderBinaryTree {
             preorderPrint(root.left);
             preorderPrint(root.right);
         }
-    }
 
     public static void main(String[] args) {
         // -1 represents null references in preorder order:
@@ -77,13 +76,13 @@ public class PreorderBinaryTree {
         int[] nodes = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
 
         // Reset index to -1 before building in case buildTree is called multiple times
-        BinaryTree.index = -1;
+        index = -1;
 
-        Node root = BinaryTree.buildTree(nodes);
+        Node root = buildTree(nodes);
 
         System.out.println("Root node data: " + root.data);
         System.out.print("Preorder traversal of constructed tree: ");
-        BinaryTree.preorderPrint(root);
+        preorderPrint(root);
         System.out.println();
     }
 }
