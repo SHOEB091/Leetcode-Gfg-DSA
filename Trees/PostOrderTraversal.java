@@ -16,7 +16,6 @@ public class PostOrderTraversal {
     }
 
     // 2. Helper class to construct and traverse the tree
-    public static class BinaryTree {
         // Tracks the current position in the input array across recursive calls
         static int index = -1;
 
@@ -63,20 +62,19 @@ public class PostOrderTraversal {
             postorderPrint(root.right);
             System.out.println(root.data+" ");
         }
-    }
 
     public static void main(String[] args) {
       
         int[] nodes = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
 
         // Reset index to -1 before building in case buildTree is called multiple times
-        BinaryTree.index = -1;
+        index = -1;
 
-        Node root = BinaryTree.buildTree(nodes);
+        Node root = buildTree(nodes);
 
         System.out.println("Root node data: " + root.data);
         System.out.print("Inorder traversal of constructed tree: ");
-        BinaryTree.postorderPrint(root);
+        postorderPrint(root);
         System.out.println();
     }
 
